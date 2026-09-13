@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Mechanical Engineering Portfolio</title>
+<meta name="description" content="Mechanical engineering student — CAD, embedded systems, and fabrication projects.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="#top" class="mark" aria-label="Home">
+    <svg viewBox="0 0 40 40" width="28" height="28" aria-hidden="true">
+      <circle cx="20" cy="20" r="16" fill="none" stroke="var(--ink)" stroke-width="2"/>
+      <circle cx="20" cy="20" r="4" fill="var(--ink)"/>
+      <line x1="20" y1="2" x2="20" y2="10" stroke="var(--ink)" stroke-width="2"/>
+      <line x1="20" y1="30" x2="20" y2="38" stroke="var(--ink)" stroke-width="2"/>
+      <line x1="2" y1="20" x2="10" y2="20" stroke="var(--ink)" stroke-width="2"/>
+      <line x1="30" y1="20" x2="38" y2="20" stroke="var(--ink)" stroke-width="2"/>
+    </svg>
+    <span>Your Name</span>
+  </a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>I build things that move, measure, and hold together.</h1>
+      <p class="hero-sub">Mechanical engineering student at UBC. I design in SolidWorks, prototype with Arduino and 3D printing, and I'm not afraid of a welder or a table saw.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn">See my projects</a>
+        <a href="#contact" class="link-quiet">Get in touch</a>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="-70 -10 520 540" width="100%" height="100%">
+        <!-- bolt head -->
+        <polygon class="draw draw-1" points="262,55 241,91.4 199,91.4 178,55 199,18.6 241,18.6"
+          fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+        <!-- explode line: head to shaft -->
+        <line class="draw draw-2" x1="220" y1="91.4" x2="220" y2="138" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="5 5"/>
+        <!-- shaft -->
+        <rect class="draw draw-2" x="205" y="138" width="30" height="130" rx="2"
+          fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+        <!-- thread lines -->
+        <g class="draw draw-2" stroke="var(--ink)" stroke-width="1">
+          <line x1="205" y1="180" x2="235" y2="184"/>
+          <line x1="205" y1="192" x2="235" y2="196"/>
+          <line x1="205" y1="204" x2="235" y2="208"/>
+          <line x1="205" y1="216" x2="235" y2="220"/>
+          <line x1="205" y1="228" x2="235" y2="232"/>
+          <line x1="205" y1="240" x2="235" y2="244"/>
+        </g>
+        <!-- explode line: shaft to washer -->
+        <line class="draw draw-3" x1="220" y1="268" x2="220" y2="300" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="5 5"/>
+        <!-- washer -->
+        <circle class="draw draw-3" cx="220" cy="324" r="34" fill="none" stroke="var(--blue)" stroke-width="2.5"/>
+        <circle class="draw draw-3" cx="220" cy="324" r="14" fill="none" stroke="var(--blue)" stroke-width="2.5"/>
+        <!-- explode line: washer to nut -->
+        <line class="draw draw-4" x1="220" y1="358" x2="220" y2="384" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="5 5"/>
+        <!-- nut -->
+        <polygon class="draw draw-4" points="256,424 238,455.2 202,455.2 184,424 202,392.8 238,392.8"
+          fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+        <circle class="draw draw-4" cx="220" cy="424" r="13" fill="none" stroke="var(--ink)" stroke-width="2.5"/>
+
+        <!-- dimension line -->
+        <g class="draw draw-5" stroke="var(--red)" stroke-width="1.5">
+          <line x1="340" y1="19" x2="340" y2="455"/>
+          <line x1="332" y1="19" x2="348" y2="19"/>
+          <line x1="332" y1="455" x2="348" y2="455"/>
+          <line x1="235" y1="19" x2="336" y2="19" stroke-dasharray="3 4"/>
+          <line x1="238" y1="455" x2="336" y2="455" stroke-dasharray="3 4"/>
+        </g>
+        <text class="draw draw-5" x="352" y="240" fill="var(--red)" font-family="IBM Plex Mono, monospace" font-size="15" transform="rotate(90 352 240)" text-anchor="middle">L 145 mm</text>
+
+        <!-- leader -->
+        <g class="draw draw-5" stroke="var(--red)" stroke-width="1.5">
+          <line x1="236" y1="196" x2="70" y2="196"/>
+          <circle cx="236" cy="196" r="2.5" fill="var(--red)" stroke="none"/>
+        </g>
+        <text class="draw draw-5" x="66" y="192" fill="var(--red)" font-family="IBM Plex Mono, monospace" font-size="15" text-anchor="end">M8 × 1.25</text>
+      </svg>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About</h2>
+    <div class="about-grid">
+      <p class="about-copy">
+        I'm a second-year mechanical engineering student who likes turning ideas into physical
+        objects — whether that means a CAD model, a line of embedded code, or a part cut on the
+        shop floor. Add two or three sentences here about what you're into, what you're looking
+        for (internships, research, competition teams), and what makes your approach distinct.
+      </p>
+      <dl class="spec-list">
+        <div><dt>CAD</dt><dd>SolidWorks</dd></div>
+        <div><dt>Code</dt><dd>Python, Java, Arduino / C++</dd></div>
+        <div><dt>Shop</dt><dd>3D printing, welding, woodworking</dd></div>
+        <div><dt>Focus</dt><dd>Add what you're looking for</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-thumb"><span>Add photo</span></div>
+        <div class="project-body">
+          <span class="tag">SolidWorks</span>
+          <h3>CAD project</h3>
+          <p>One or two sentences on what this project does and why you built it — replace with your own project.</p>
+          <a href="#" class="link-quiet">Read the write-up</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-thumb"><span>Add photo</span></div>
+        <div class="project-body">
+          <span class="tag">Arduino · C++</span>
+          <h3>Embedded project</h3>
+          <p>One or two sentences on what this project does and why you built it — replace with your own project.</p>
+          <a href="#" class="link-quiet">Read the write-up</a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-thumb"><span>Add photo</span></div>
+        <div class="project-body">
+          <span class="tag">Welding · 3D printing</span>
+          <h3>Fabrication project</h3>
+          <p>One or two sentences on what this project does and why you built it — replace with your own project.</p>
+          <a href="#" class="link-quiet">Read the write-up</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer id="contact" class="title-block">
+    <div class="tb-cell tb-wide">
+      <div class="tb-label">Name</div>
+      <div class="tb-value">Your Name</div>
+    </div>
+    <div class="tb-cell">
+      <div class="tb-label">Email</div>
+      <div class="tb-value"><a href="mailto:[email protected]">[email protected]</a></div>
+    </div>
+    <div class="tb-cell">
+      <div class="tb-label">GitHub</div>
+      <div class="tb-value"><a href="https://github.com/yourusername">github.com/yourusername</a></div>
+    </div>
+    <div class="tb-cell">
+      <div class="tb-label">LinkedIn</div>
+      <div class="tb-value"><a href="https://linkedin.com/in/yourusername">linkedin.com/in/yourusername</a></div>
+    </div>
+    <div class="tb-cell">
+      <div class="tb-label">Scale</div>
+      <div class="tb-value">1:1</div>
+    </div>
+    <div class="tb-cell">
+      <div class="tb-label">Sheet</div>
+      <div class="tb-value">1 of 1</div>
+    </div>
+  </footer>
+
+</main>
+
+</body>
+</html>
