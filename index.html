@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Your Name — Mechanical Engineering Portfolio</title>
-<meta name="description" content="Mechanical engineering student — CAD, embedded systems, and fabrication projects.">
+<title>Abhinav Maheswaran — Mechanical Engineering Portfolio</title>
+<meta name="description" content="Abhinav Maheswaran, Mechanical Engineering student at UBC. Composite design, FEA, fabrication and electromechanical projects.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -22,7 +22,7 @@
       <line x1="2" y1="20" x2="10" y2="20" stroke="var(--ink)" stroke-width="2"/>
       <line x1="30" y1="20" x2="38" y2="20" stroke="var(--ink)" stroke-width="2"/>
     </svg>
-    <span>Your Name</span>
+    <span>Abhinav Maheswaran</span>
   </a>
   <nav>
     <a href="#about">About</a>
@@ -35,8 +35,9 @@
 
   <section class="hero">
     <div class="hero-text">
-      <h1>I build things that move, measure, and hold together.</h1>
-      <p class="hero-sub">Mechanical engineering student at UBC. I design in SolidWorks, prototype with Arduino and 3D printing, and I'm not afraid of a welder or a table saw.</p>
+      <p class="eyebrow">Mechanical Engineering · UBC Vancouver</p>
+      <h1>Abhinav Maheswaran</h1>
+      <p class="hero-sub">Second-year student leading the carbon fibre electric cover on UBC Thunderbikes. I design in SolidWorks, validate with FEA, and build with composites, a welder and an Arduino.</p>
       <div class="hero-actions">
         <a href="#projects" class="btn">See my projects</a>
         <a href="#contact" class="link-quiet">Get in touch</a>
@@ -97,17 +98,28 @@
   <section id="about" class="section">
     <h2>About</h2>
     <div class="about-grid">
-      <p class="about-copy">
-        I'm a second-year mechanical engineering student who likes turning ideas into physical
-        objects — whether that means a CAD model, a line of embedded code, or a part cut on the
-        shop floor. Add two or three sentences here about what you're into, what you're looking
-        for (internships, research, competition teams), and what makes your approach distinct.
-      </p>
+      <div class="about-copy">
+        <p>
+          I'm a second-year Mechanical Engineering student at UBC (Dean's List, 2025/26). On the
+          UBC Thunderbikes design team I lead a three-person group designing the carbon fibre
+          electric cover for our MotoStudent electric motorcycle, taking it from surface model to
+          FEA to composite prototypes.
+        </p>
+        <p>
+          Outside the team I build things on my own: an electric go-kart made from scrap metal and
+          hoverboard motors for under $50, and now a maple-and-carbon skateboard deck. I'm looking
+          for a 4- or 8-month co-op term starting May 2027 in automotive and motorsport, product
+          design, or sustainable power.
+        </p>
+      </div>
       <dl class="spec-list">
-        <div><dt>CAD</dt><dd>SolidWorks</dd></div>
-        <div><dt>Code</dt><dd>Python, Java, Arduino / C++</dd></div>
-        <div><dt>Shop</dt><dd>3D printing, welding, woodworking</dd></div>
-        <div><dt>Focus</dt><dd>Add what you're looking for</dd></div>
+        <div><dt>CAD</dt><dd>SolidWorks (surfacing), Fusion 360, AutoCAD</dd></div>
+        <div><dt>Simulation</dt><dd>SolidWorks FEA, Ansys CFD</dd></div>
+        <div><dt>Composites</dt><dd>Vacuum infusion, wet layup, 3D-printed molds</dd></div>
+        <div><dt>Code</dt><dd>Python, MATLAB, C/C++, Java</dd></div>
+        <div><dt>Electronics</dt><dd>Arduino, PWM motor control, soldering</dd></div>
+        <div><dt>Shop</dt><dd>Stick welding, lathe, mill, CNC, woodworking</dd></div>
+        <div><dt>Seeking</dt><dd>Co-op from May 2027 (4 or 8 mo)</dd></div>
       </dl>
     </div>
   </section>
@@ -117,32 +129,68 @@
     <div class="project-grid">
 
       <article class="project-card">
-        <div class="project-thumb"><span>Add photo</span></div>
+        <div class="project-thumb"><span>Photo: electric cover render / FEA plot</span></div>
         <div class="project-body">
-          <span class="tag">SolidWorks</span>
-          <h3>CAD project</h3>
-          <p>One or two sentences on what this project does and why you built it — replace with your own project.</p>
-          <a href="#" class="link-quiet">Read the write-up</a>
+          <div class="card-meta">
+            <span class="tag">SolidWorks · FEA · Composites</span>
+            <span class="status">Jan 2026 – present</span>
+          </div>
+          <h3>Thunderbikes Electric Cover</h3>
+          <p>A carbon fibre electric cover for UBC Thunderbikes' MotoStudent electric motorcycle. I lead the sub-project, from surface modelling through structural validation to composite prototypes.</p>
+          <p class="stat">0.005 mm max displacement vs. 10 mm competition limit</p>
+          <details>
+            <summary>Read the details</summary>
+            <ul>
+              <li><strong>Role:</strong> Aerodynamics subteam member; leading the electric cover sub-project and a team of two since Sept. 2026.</li>
+              <li><strong>Design:</strong> Surface-modelled the cover in SolidWorks to be aerodynamically efficient within the bike's packaging constraints; now on version 6.</li>
+              <li><strong>Validation:</strong> SolidWorks static structural FEA (6-ply carbon fibre, 50 N pressure load) gave a max displacement of 0.005011 mm. Refining the profile with Ansys CFD to reduce drag (in progress).</li>
+              <li><strong>Manufacturing:</strong> Modelled 3D-printed molds and prototyped 3 composite parts by vacuum infusion and wet layup to prove the design can be built.</li>
+              <li><strong>Process:</strong> Built a Notion workflow linking every CAD version, mold, FEA run and work log; presented at a design review in March 2026.</li>
+            </ul>
+          </details>
         </div>
       </article>
 
       <article class="project-card">
-        <div class="project-thumb"><span>Add photo</span></div>
+        <div class="project-thumb"><span>Photo: go-kart</span></div>
         <div class="project-body">
-          <span class="tag">Arduino · C++</span>
-          <h3>Embedded project</h3>
-          <p>One or two sentences on what this project does and why you built it — replace with your own project.</p>
-          <a href="#" class="link-quiet">Read the write-up</a>
+          <div class="card-meta">
+            <span class="tag">Welding · Arduino · C++</span>
+            <span class="status">June 2025</span>
+          </div>
+          <h3>Electric Go-Kart</h3>
+          <p>A working electric go-kart built from scrap metal and two repurposed hoverboard hub motors. The only parts I bought were the speed controllers.</p>
+          <p class="stat">20 km/h top speed · under $50</p>
+          <details>
+            <summary>Read the details</summary>
+            <ul>
+              <li><strong>Frame:</strong> Taught myself stick welding (SMAW) and welded a custom frame from an old dolly and recycled metal.</li>
+              <li><strong>Steering:</strong> Designed and built a working mechanical steering system out of scrap metal.</li>
+              <li><strong>Electronics:</strong> Built the control circuit and programmed an Arduino Uno to map throttle input to PWM outputs for the motor speed controllers.</li>
+              <li><strong>Result:</strong> Reached 20 km/h and was driven and demoed in my school's hallway.</li>
+            </ul>
+          </details>
         </div>
       </article>
 
       <article class="project-card">
-        <div class="project-thumb"><span>Add photo</span></div>
+        <div class="project-thumb"><span>Photo: deck CAD / maple slab</span></div>
         <div class="project-body">
-          <span class="tag">Welding · 3D printing</span>
-          <h3>Fabrication project</h3>
-          <p>One or two sentences on what this project does and why you built it — replace with your own project.</p>
-          <a href="#" class="link-quiet">Read the write-up</a>
+          <div class="card-meta">
+            <span class="tag">Composites · Woodworking</span>
+            <span class="status status-wip">In design</span>
+          </div>
+          <h3>Carbon Fibre Skateboard</h3>
+          <p>A skateboard deck with a resawn maple veneer core and carbon fibre skins, built for a lighter, stiffer deck and to take my composites work further outside the team.</p>
+          <p class="stat">Build log coming soon</p>
+          <details>
+            <summary>Read the plan</summary>
+            <ul>
+              <li><strong>Core:</strong> Resaw a live-edge maple slab into veneers using the bandsaw, jointer and planer at UBC's Centre for Advanced Wood Processing.</li>
+              <li><strong>Design:</strong> Model the deck shape and press mold in SolidWorks.</li>
+              <li><strong>Layup:</strong> Laminate the maple core and bond carbon fibre skins using wet layup and vacuum bagging.</li>
+            </ul>
+          </details>
         </div>
       </article>
 
@@ -152,27 +200,27 @@
   <footer id="contact" class="title-block">
     <div class="tb-cell tb-wide">
       <div class="tb-label">Name</div>
-      <div class="tb-value">Your Name</div>
+      <div class="tb-value">Abhinav Maheswaran</div>
     </div>
     <div class="tb-cell">
       <div class="tb-label">Email</div>
-      <div class="tb-value"><a href="mailto:[email protected]">[email protected]</a></div>
+      <div class="tb-value"><a href="mailto:abhimahesh2007@gmail.com">abhimahesh2007@gmail.com</a></div>
     </div>
     <div class="tb-cell">
       <div class="tb-label">GitHub</div>
-      <div class="tb-value"><a href="https://github.com/yourusername">github.com/yourusername</a></div>
+      <div class="tb-value"><a href="https://github.com/abeenav05">github.com/abeenav05</a></div>
     </div>
     <div class="tb-cell">
       <div class="tb-label">LinkedIn</div>
-      <div class="tb-value"><a href="https://linkedin.com/in/yourusername">linkedin.com/in/yourusername</a></div>
+      <div class="tb-value"><a href="https://www.linkedin.com/in/abhi-maheswaran-72875a3a2">linkedin.com/in/abhi-maheswaran</a></div>
     </div>
     <div class="tb-cell">
       <div class="tb-label">Scale</div>
       <div class="tb-value">1:1</div>
     </div>
     <div class="tb-cell">
-      <div class="tb-label">Sheet</div>
-      <div class="tb-value">1 of 1</div>
+      <div class="tb-label">Rev</div>
+      <div class="tb-value">Nov 2026</div>
     </div>
   </footer>
 
